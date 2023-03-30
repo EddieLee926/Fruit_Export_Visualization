@@ -1,0 +1,992 @@
+[
+    {
+        "name": "grapefruit",
+        "category": "109",
+        "children": [
+            {
+                "name": "新北",
+                "value": 71.65
+            },
+            {
+                "name": "台北",
+                "value": 10.63
+            },
+            {
+                "name": "臺中",
+                "value": 27.23
+            },
+            {
+                "name": "臺南",
+                "value": 272.97
+            },
+            {
+                "name": "高雄",
+                "value": 22.11
+            },
+            {
+                "name": "宜蘭",
+                "value": 45.56
+            },
+            {
+                "name": "新竹",
+                "value": 114.09
+            },
+            {
+                "name": "苗栗",
+                "value": 29.85
+            },
+            {
+                "name": "彰化",
+                "value": 39.36
+            },
+            {
+                "name": "南投",
+                "value": 58.94
+            },
+            {
+                "name": "雲林",
+                "value": 2035.29
+            },
+            {
+                "name": "嘉義",
+                "value": 4728.08
+            },
+            {
+                "name": "屏東",
+                "value": 131.02
+            },
+            {
+                "name": "臺東",
+                "value": 226.23
+            },
+            {
+                "name": "花蓮",
+                "value": 332.22
+            }
+        ]
+    },
+    {
+        "name": "grapefruit",
+        "category": "108",
+        "children": [
+            {
+                "name": "新北",
+                "value": 71.42
+            },
+            {
+                "name": "台北",
+                "value": 8.34
+            },
+            {
+                "name": "臺中",
+                "value": 26.95
+            },
+            {
+                "name": "臺南",
+                "value": 347.80
+            },
+            {
+                "name": "高雄",
+                "value": 29.15
+            },
+            {
+                "name": "宜蘭",
+                "value": 50.04
+            },
+            {
+                "name": "新竹",
+                "value": 122.76
+            },
+            {
+                "name": "苗栗",
+                "value": 32.93
+            },
+            {
+                "name": "彰化",
+                "value": 37.15
+            },
+            {
+                "name": "南投",
+                "value": 58.87
+            },
+            {
+                "name": "雲林",
+                "value": 2156.14
+            },
+            {
+                "name": "嘉義",
+                "value": 4764.48
+            },
+            {
+                "name": "屏東",
+                "value": 144.82
+            },
+            {
+                "name": "臺東",
+                "value": 228.18
+            },
+            {
+                "name": "花蓮",
+                "value": 503.44
+            }
+        ]
+    },
+    {
+        "name": "grapefruit",
+        "category": "107",
+        "children": [
+            {
+                "name": "新北",
+                "value": 71.42
+            },
+            {
+                "name": "台北",
+                "value": 11.50
+            },
+            {
+                "name": "臺中",
+                "value": 33.77
+            },
+            {
+                "name": "臺南",
+                "value": 348.49
+            },
+            {
+                "name": "高雄",
+                "value": 30.24
+            },
+            {
+                "name": "宜蘭",
+                "value": 50.01
+            },
+            {
+                "name": "新竹",
+                "value": 126.69
+            },
+            {
+                "name": "苗栗",
+                "value": 36.04
+            },
+            {
+                "name": "彰化",
+                "value": 53.01
+            },
+            {
+                "name": "南投",
+                "value": 53.63
+            },
+            {
+                "name": "雲林",
+                "value": 1970.34
+            },
+            {
+                "name": "嘉義",
+                "value": 4772.05
+            },
+            {
+                "name": "屏東",
+                "value": 161.52
+            },
+            {
+                "name": "臺東",
+                "value": 248.35
+            },
+            {
+                "name": "花蓮",
+                "value": 714.84
+            }
+        ]
+    },
+    {
+        "name": "grapefruit",
+        "category": "106",
+        "children": [
+            {
+                "name": "新北",
+                "value": 71.42
+            },
+            {
+                "name": "台北",
+                "value": 10.54
+            },
+            {
+                "name": "臺中",
+                "value": 31.76
+            },
+            {
+                "name": "臺南",
+                "value": 342.20
+            },
+            {
+                "name": "高雄",
+                "value": 29.52
+            },
+            {
+                "name": "宜蘭",
+                "value": 48.63
+            },
+            {
+                "name": "新竹",
+                "value": 115.75
+            },
+            {
+                "name": "苗栗",
+                "value": 34.39
+            },
+            {
+                "name": "彰化",
+                "value": 59.46
+            },
+            {
+                "name": "南投",
+                "value": 45.49
+            },
+            {
+                "name": "雲林",
+                "value": 2008.02
+            },
+            {
+                "name": "嘉義",
+                "value": 4813.45
+            },
+            {
+                "name": "屏東",
+                "value": 253.28
+            },
+            {
+                "name": "臺東",
+                "value": 216.04
+            },
+            {
+                "name": "花蓮",
+                "value": 769.86
+            }
+        ]
+    },
+    {
+        "name": "grapefruit",
+        "category": "105",
+        "children": [
+            {
+                "name": "新北",
+                "value": 69.01
+            },
+            {
+                "name": "台北",
+                "value": 8.66
+            },
+            {
+                "name": "臺中",
+                "value": 30.47
+            },
+            {
+                "name": "臺南",
+                "value": 399.05
+            },
+            {
+                "name": "高雄",
+                "value": 23.98
+            },
+            {
+                "name": "宜蘭",
+                "value": 36.82
+            },
+            {
+                "name": "新竹",
+                "value": 141.74
+            },
+            {
+                "name": "苗栗",
+                "value": 28.72
+            },
+            {
+                "name": "彰化",
+                "value": 49.68
+            },
+            {
+                "name": "南投",
+                "value": 80.24
+            },
+            {
+                "name": "雲林",
+                "value": 2052.58
+            },
+            {
+                "name": "嘉義",
+                "value": 3958.47
+            },
+            {
+                "name": "屏東",
+                "value": 192.78
+            },
+            {
+                "name": "臺東",
+                "value": 217.10
+            },
+            {
+                "name": "花蓮",
+                "value": 736.58
+            }
+        ]
+    },
+    {
+        "name": "grapefruit",
+        "category": "104",
+        "children": [
+            {
+                "name": "新北",
+                "value": 71.89
+            },
+            {
+                "name": "台北",
+                "value": 7.88
+            },
+            {
+                "name": "臺中",
+                "value": 28.58
+            },
+            {
+                "name": "臺南",
+                "value": 391.92
+            },
+            {
+                "name": "高雄",
+                "value": 32.91
+            },
+            {
+                "name": "宜蘭",
+                "value": 32.68
+            },
+            {
+                "name": "新竹",
+                "value": 142.75
+            },
+            {
+                "name": "苗栗",
+                "value": 25.78
+            },
+            {
+                "name": "彰化",
+                "value": 67.41
+            },
+            {
+                "name": "南投",
+                "value": 81.32
+            },
+            {
+                "name": "雲林",
+                "value": 2044.35
+            },
+            {
+                "name": "嘉義",
+                "value": 4470.09
+            },
+            {
+                "name": "屏東",
+                "value": 211.59
+            },
+            {
+                "name": "臺東",
+                "value": 208.87
+            },
+            {
+                "name": "花蓮",
+                "value": 731.50
+            }
+        ]
+    },
+    {
+        "name": "grapefruit",
+        "category": "103",
+        "children": [
+            {
+                "name": "新北",
+                "value": 79.53
+            },
+            {
+                "name": "台北",
+                "value": 7.74
+            },
+            {
+                "name": "臺中",
+                "value": 34.68
+            },
+            {
+                "name": "臺南",
+                "value": 478.81
+            },
+            {
+                "name": "高雄",
+                "value": 22.23
+            },
+            {
+                "name": "宜蘭",
+                "value": 28.41
+            },
+            {
+                "name": "新竹",
+                "value": 134.28
+            },
+            {
+                "name": "苗栗",
+                "value": 16.99
+            },
+            {
+                "name": "彰化",
+                "value": 48.74
+            },
+            {
+                "name": "南投",
+                "value": 85.64
+            },
+            {
+                "name": "雲林",
+                "value": 2324.25
+            },
+            {
+                "name": "嘉義",
+                "value": 5001.62
+            },
+            {
+                "name": "屏東",
+                "value": 199.26
+            },
+            {
+                "name": "臺東",
+                "value": 209.05
+            },
+            {
+                "name": "花蓮",
+                "value": 809.38
+            }
+        ]
+    },
+    {
+        "name": "grapefruit",
+        "category": "102",
+        "children": [
+            {
+                "name": "新北",
+                "value": 61.70
+            },
+            {
+                "name": "台北",
+                "value": 8.49
+            },
+            {
+                "name": "臺中",
+                "value": 23.33
+            },
+            {
+                "name": "臺南",
+                "value": 496.02
+            },
+            {
+                "name": "高雄",
+                "value": 16.10
+            },
+            {
+                "name": "宜蘭",
+                "value": 27.40
+            },
+            {
+                "name": "新竹",
+                "value": 131.97
+            },
+            {
+                "name": "苗栗",
+                "value": 39.13
+            },
+            {
+                "name": "彰化",
+                "value": 59.33
+            },
+            {
+                "name": "南投",
+                "value": 99.55
+            },
+            {
+                "name": "雲林",
+                "value": 1782.64
+            },
+            {
+                "name": "嘉義",
+                "value": 4933.42
+            },
+            {
+                "name": "屏東",
+                "value": 339.07
+            },
+            {
+                "name": "臺東",
+                "value": 261.44
+            },
+            {
+                "name": "花蓮",
+                "value": 764.83
+            }
+        ]
+    },
+    {
+        "name": "grapefruit",
+        "category": "101",
+        "children": [
+            {
+                "name": "新北",
+                "value": 68.15
+            },
+            {
+                "name": "台北",
+                "value": 8.58
+            },
+            {
+                "name": "臺中",
+                "value": 22.90
+            },
+            {
+                "name": "臺南",
+                "value": 522.88
+            },
+            {
+                "name": "高雄",
+                "value": 7.77
+            },
+            {
+                "name": "宜蘭",
+                "value": 30.16
+            },
+            {
+                "name": "新竹",
+                "value": 58.07
+            },
+            {
+                "name": "苗栗",
+                "value": 3.25
+            },
+            {
+                "name": "彰化",
+                "value": 59.68
+            },
+            {
+                "name": "南投",
+                "value": 102.13
+            },
+            {
+                "name": "雲林",
+                "value": 1593.40
+            },
+            {
+                "name": "嘉義",
+                "value": 5193.46
+            },
+            {
+                "name": "屏東",
+                "value": 287.69
+            },
+            {
+                "name": "臺東",
+                "value": 266.01
+            },
+            {
+                "name": "花蓮",
+                "value": 723.37
+            }
+        ]
+    },
+    {
+        "name": "grapefruit",
+        "category": "100",
+        "children": [
+            {
+                "name": "新北",
+                "value": 62.94
+            },
+            {
+                "name": "台北",
+                "value": 8.58
+            },
+            {
+                "name": "臺中",
+                "value": 23.53
+            },
+            {
+                "name": "臺南",
+                "value": 571.34
+            },
+            {
+                "name": "高雄",
+                "value": 2.83
+            },
+            {
+                "name": "宜蘭",
+                "value": 98.69
+            },
+            {
+                "name": "新竹",
+                "value": 53.55
+            },
+            {
+                "name": "苗栗",
+                "value": 22.98
+            },
+            {
+                "name": "彰化",
+                "value": 65.04
+            },
+            {
+                "name": "南投",
+                "value": 103.73
+            },
+            {
+                "name": "雲林",
+                "value": 1775.56
+            },
+            {
+                "name": "嘉義",
+                "value": 5625.48
+            },
+            {
+                "name": "屏東",
+                "value": 298.95
+            },
+            {
+                "name": "臺東",
+                "value": 268.06
+            },
+            {
+                "name": "花蓮",
+                "value": 729.95
+            }
+        ]
+    },
+    {
+        "name": "grapefruit",
+        "category": "99",
+        "children": [
+            {
+                "name": "新北",
+                "value": 66.79
+            },
+            {
+                "name": "台北",
+                "value": 8.35
+            },
+            {
+                "name": "臺中",
+                "value": 23.61
+            },
+            {
+                "name": "臺南",
+                "value": 599.57
+            },
+            {
+                "name": "高雄",
+                "value": 2.64
+            },
+            {
+                "name": "宜蘭",
+                "value": 139.79
+            },
+            {
+                "name": "新竹",
+                "value": 62.60
+            },
+            {
+                "name": "苗栗",
+                "value": 20.59
+            },
+            {
+                "name": "彰化",
+                "value": 76.88
+            },
+            {
+                "name": "南投",
+                "value": 109.65
+            },
+            {
+                "name": "雲林",
+                "value": 1648.10
+            },
+            {
+                "name": "嘉義",
+                "value": 5375.32
+            },
+            {
+                "name": "屏東",
+                "value": 31.26
+            },
+            {
+                "name": "臺東",
+                "value": 277.82
+            },
+            {
+                "name": "花蓮",
+                "value": 764.15
+            }
+        ]
+    },
+    {
+        "name": "grapefruit",
+        "category": "98",
+        "children": [
+            {
+                "name": "新北",
+                "value": 66.79
+            },
+            {
+                "name": "台北",
+                "value": 10.38
+            },
+            {
+                "name": "臺中",
+                "value": 8.40
+            },
+            {
+                "name": "臺南",
+                "value": 646.21
+            },
+            {
+                "name": "高雄",
+                "value": 17.31
+            },
+            {
+                "name": "宜蘭",
+                "value": 165.99
+            },
+            {
+                "name": "新竹",
+                "value": 57.52
+            },
+            {
+                "name": "苗栗",
+                "value": 191.42
+            },
+            {
+                "name": "彰化",
+                "value": 58.25
+            },
+            {
+                "name": "南投",
+                "value": 120.18
+            },
+            {
+                "name": "雲林",
+                "value": 1202.55
+            },
+            {
+                "name": "嘉義",
+                "value": 5531.92
+            },
+            {
+                "name": "屏東",
+                "value": 15.76
+            },
+            {
+                "name": "臺東",
+                "value": 408.11
+            },
+            {
+                "name": "花蓮",
+                "value": 942.75
+            }
+        ]
+    },
+    {
+        "name": "grapefruit",
+        "category": "97",
+        "children": [
+            {
+                "name": "新北",
+                "value": 76.34
+            },
+            {
+                "name": "台北",
+                "value": 8.71
+            },
+            {
+                "name": "臺中",
+                "value": 8.40
+            },
+            {
+                "name": "臺南",
+                "value": 830.24
+            },
+            {
+                "name": "高雄",
+                "value": 19.36
+            },
+            {
+                "name": "宜蘭",
+                "value": 35.18
+            },
+            {
+                "name": "新竹",
+                "value": 43.29
+            },
+            {
+                "name": "苗栗",
+                "value": 132.90
+            },
+            {
+                "name": "彰化",
+                "value": 58.36
+            },
+            {
+                "name": "南投",
+                "value": 108.21
+            },
+            {
+                "name": "雲林",
+                "value": 866.53
+            },
+            {
+                "name": "嘉義",
+                "value": 5754.90
+            },
+            {
+                "name": "屏東",
+                "value": 15.90
+            },
+            {
+                "name": "臺東",
+                "value": 304.48
+            },
+            {
+                "name": "花蓮",
+                "value": 1076.33
+            }
+        ]
+    },
+    {
+        "name": "grapefruit",
+        "category": "96",
+        "children": [
+            {
+                "name": "新北",
+                "value": 76.36
+            },
+            {
+                "name": "台北",
+                "value": 6.61
+            },
+            {
+                "name": "臺中",
+                "value": 6.91
+            },
+            {
+                "name": "臺南",
+                "value": 817.95
+            },
+            {
+                "name": "高雄",
+                "value": 10.00
+            },
+            {
+                "name": "宜蘭",
+                "value": 39.78
+            },
+            {
+                "name": "新竹",
+                "value": 46.34
+            },
+            {
+                "name": "苗栗",
+                "value": 0.00
+            },
+            {
+                "name": "彰化",
+                "value": 60.96
+            },
+            {
+                "name": "南投",
+                "value": 91.32
+            },
+            {
+                "name": "雲林",
+                "value": 941.52
+            },
+            {
+                "name": "嘉義",
+                "value": 6130.12
+            },
+            {
+                "name": "屏東",
+                "value": 10.16
+            },
+            {
+                "name": "臺東",
+                "value": 306.82
+            },
+            {
+                "name": "花蓮",
+                "value": 622.01
+            }
+        ]
+    },
+    {
+        "name": "grapefruit",
+        "category": "95",
+        "children": [
+            {
+                "name": "新北",
+                "value": 75.72
+            },
+            {
+                "name": "台北",
+                "value": 8.71
+            },
+            {
+                "name": "臺中",
+                "value": 6.72
+            },
+            {
+                "name": "臺南",
+                "value": 869.21
+            },
+            {
+                "name": "高雄",
+                "value": 41.02
+            },
+            {
+                "name": "宜蘭",
+                "value": 52.32
+            },
+            {
+                "name": "新竹",
+                "value": 39.41
+            },
+            {
+                "name": "苗栗",
+                "value": 45.93
+            },
+            {
+                "name": "彰化",
+                "value": 77.14
+            },
+            {
+                "name": "南投",
+                "value": 91.27
+            },
+            {
+                "name": "雲林",
+                "value": 1002.76
+            },
+            {
+                "name": "嘉義",
+                "value": 6937.31
+            },
+            {
+                "name": "屏東",
+                "value": 10.78
+            },
+            {
+                "name": "臺東",
+                "value": 292.84
+            },
+            {
+                "name": "花蓮",
+                "value": 571.31
+            }
+        ]
+    }
+]

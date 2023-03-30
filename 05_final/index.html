@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script>
+        d3version3 = d3
+        window.d3 = null
+    </script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script>
+        d3version4 = d3
+        window.d3 = null
+    </script>
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-img">
+        <h1
+            style="position: absolute; left:50%; transform: translateX(-50%); top: 18%;color: #fff6f6; font-weight: 700;text-shadow: 8px 4px 5px #515050;">
+            台灣農產品出口與生產量歷史統計</h1>
+    </div>
+    <div class="container" style="height: 300px; background-color: whitesmoke; width: 1200px; position: absolute;
+    top: 30%; left: 50%; transform: translateX(-50%);">
+        <div class="title">圖表操作流程說明</div>
+        <div class="step-section d-flex justify-content-center">
+            <div class="arrow arrow1">
+                <div class="w-100 h-100 position-absolute" style="overflow: hidden;">
+                    <p class="number1 position-absolute">1</p>
+                </div>
+            </div>
+            <div class="arrow arrow2">
+                <div class="w-100 h-100 position-absolute" style="overflow: hidden;">
+                    <p class="number2 position-absolute">2</p>
+                </div>
+            </div>
+            <div class="arrow arrow3">
+                <div class="w-100 h-100 position-absolute" style="overflow: hidden;">
+                    <p class="number3 position-absolute">3</p>
+                </div>
+            </div>
+            <div class="arrow arrow4">
+                <div class="w-100 h-100 position-absolute" style="overflow: hidden;">
+                    <p class="number4 position-absolute">4</p>
+                </div>
+            </div>
+        </div>
+        <div class="content text-center position-relative">
+            <div class="step">可先透過時間滑桿，選擇感興趣的年度區間範圍。</div>
+        </div>
+    </div>
+    <div class="container d-flex" style="position: absolute; top: 550px;">
+        <div class="upper-box">
+            <div>
+                <p style="margin: auto;">目前水果（請點下方關聯圖中的水果）：<span id="fruit">香蕉</span>
+                </p>
+            </div>
+            <!-- time bar -->
+            <div class="input-group" style="width: 65%;">
+                <label for="customRange3" class="form-label"
+                    style="font-size: 20px; line-height:76px; margin-bottom: 0px;">年份</label>
+                <div class="year-range" style="width: 92%;">
+                    <div slider id="slider-distance">
+                        <div>
+                            <div inverse-left style="width:0%;"></div>
+                            <div inverse-right style="width:0%;"></div>
+                            <div range style="left:0%;right:0%;"></div>
+                            <span thumb style="left:0%;"></span>
+                            <span thumb style="left:100%;"></span>
+                            <div sign style="left:0%;">
+                                <span id="value">95</span>
+                            </div>
+                            <div sign style="left:100%;">
+                                <span id="value">109</span>
+                            </div>
+                        </div>
+                        <input type="range" id="left-slider" tabindex="0" value="95" max="109" min="95" step="1"
+                            oninput="this.value = Math.min(this.value, this.parentNode.childNodes[5].value - 1);    
+                                            let value = (100 / (parseInt(this.max) - parseInt(this.min))) * parseInt(this.value) - (100 / (parseInt(this.max) - parseInt(this.min))) * parseInt(this.min);
+                                            let children = this.parentNode.childNodes[1].childNodes;
+                                            children[1].style.width = value + '%';
+                                            children[5].style.left = value + '%';
+                                            children[7].style.left = value + '%'; children[11].style.left = value + '%';
+                                            children[11].childNodes[1].innerHTML = this.value;
+                                            document.getElementById('year1').value = this.value;
+                                            $('#year1').val(this.value).trigger('change');" />
+                        <input type="range" id="right-slider" tabindex="0" value="109" max="109" min="95" step="1"
+                            oninput="this.value = Math.max(this.value, this.parentNode.childNodes[3].value - (-1));
+                                            let value = (100 / (parseInt(this.max) - parseInt(this.min))) * parseInt(this.value) - (100 / (parseInt(this.max) - parseInt(this.min))) * parseInt(this.min);
+                                            let children = this.parentNode.childNodes[1].childNodes;
+                                            children[3].style.width = (100 - value) + '%';
+                                            children[5].style.right = (100 - value) + '%';
+                                            children[9].style.left = value + '%'; children[13].style.left = value + '%';
+                                            children[13].childNodes[1].innerHTML = this.value;
+                                            $('#year2').val(this.value).trigger('change');" />
+                    </div>
+                </div>
+                <!-- <div class="fruit-btn-list">
+                                        <input type="button" value="香蕉" class="fruit-btn">
+                                        <input type="button" value="荔枝" class="fruit-btn">
+                                        <input type="button" value="鳳梨" class="fruit-btn">
+                                        <input type="button" value="釋迦" class="fruit-btn">
+                                        <input type="button" value="芒果" class="fruit-btn">
+                                        <input type="button" value="蓮霧" class="fruit-btn">
+                                        <input type="button" value="柚子" class="fruit-btn">
+                                        <input type="button" value="椪柑" class="fruit-btn">
+                                    </div> -->
+            </div>
+
+        </div>
+    </div>
+    <div class="container d-flex" style="position: absolute;top: 660px;">
+
+        <div class="left-section">
+
+            <div id="chart" class="box1"></div>
+        </div>
+        <div class="right-section">
+            <div id="pic2" class="box2"></div>
+            <div id="my_dataviz" class="box3"></div>
+        </div>
+    </div>
+
+    <div class="container" style="height: 700px; position: absolute; top:1400px;">
+        <div class="title">圖表簡介</div>
+        <div class="d-flex justify-content-around h-100">
+            <div class="card">
+                <div class="card-img-top position-relative">
+                    <img class="position-absolute" src="./img/ph1.JPG" style="width: 80%;" />
+                    <h5 class="card-title position-absolute text-center">台灣出口國家<br>關聯圖</h5>
+                </div>
+                <div class="card-body p-2">
+                    <p class="card-text">為了可以描述國與國間的貿易行為，並考量到操作者的便利性，本組透過多次的討論過程，從地理層面的flow map、單純利用文字標籤的arc
+                        diagram，到最後參考期刊報告文章的研究成果，確立本組在描述此一議題的概念方法。本組採用文章中利用文字描述國家，與將這些國家標籤圍繞成圓的想法來構思，並運用關聯圖的方式，將水果與國家間的關係串連起來，使用者可透過點選圖中央的水果列表，進而深化與加粗文字與連結線條，來顯示該水果與進口國間的關係。也為了讓使用者更清楚國家的粗略地理位置，也以洲為單位，使用顏色進行區隔。
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-top position-relative">
+                    <img class="w-75 position-absolute" src="./img/ph2.JPG" />
+                    <h5 class="card-title position-absolute text-center" style="left: 30px;">台灣縣市<br>產量圖</h5>
+                </div>
+                <div class="card-body p-2">
+                    <p class="card-text">
+                        此圖表提供不同年度的台灣各地區特定水果生產總量，可透過上方時間軸進行年度篩選，bubble半徑、顏色與實際產量用線性關係呈現，礙於畫面限制，有些時間bubble可能會在畫面之外，圖表有設計拖拉功能，點擊bubble外的地方即可進行拖拉。透過滑鼠hover至任一年度bubble後內部將會顯示各縣市bubble，並透過tooltip呈現實際產量，此外，可以點選各年度bubble會有zoom-in特效，以便更清楚查看詳細資訊，接著可以繼續點擊下一個bubble或是點擊外面zoom-out。年度的bubble亦可拖拉，加入些許互動性。
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-top position-relative">
+                    <img class="w-75 position-absolute" src="./img/ph3.JPG" />
+                    <h5 class="card-title position-absolute text-center" style="left: 30px;">台灣出口<br>累積圖</h5>
+                </div>
+                <div class="card-body p-2">
+                    <p class="card-text">
+                        此圖目的是為了方便使用者在不同屬性間比較，從中發現台灣對特定國家出口量佔整體出口的趨勢變化，又因各國銷量加總可呈現水果整體出口變化，也希望這張圖表可以擁有觀察整體的功能。選擇水果和年度區間後，圖表直觀地呈現出各年度的銷量，並用顏色區隔不同國家。當滑鼠移到圖表上時，會出現當年度各國實際銷量的數字，方便使用者在資料數字較小時比較。滑鼠移到右邊國家的標籤上時，圖表會凸顯此國家的區塊，可以快速查找不同國家的銷量變化。<br>（因為版面配置，將不呈現出口量過少的國家）
+                    </p>
+                </div>
+            </div>
+        </div>
+        <p style="font-size: 14px;">Photo by <a
+                href="https://unsplash.com/@juliazolotova?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Julia
+                Zolotova</a> on <a
+                href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+    </div>
+
+    <!-- hidden input-->
+    <div class="hidden-input">
+        <input type="hidden" id="year1" value="95">
+        <input type="hidden" id="year2" value="109">
+        <input type="hidden" id="fruit" value="香蕉">
+        <input type="hidden" id="country" value="">
+    </div>
+    <script src="stacked.js"></script>
+    <script src="bubble.js"></script>
+    <script src="conceptmap.js"></script>
+    <script>
+        let fruitBtn = document.querySelectorAll('.fruit-btn');
+        // fruitBtn.forEach(e => e.addEventListener('click', changeFruit));
+
+        // function changeFruit() {
+        //     console.log(this.value);
+        //     fruit = this.value;
+        //     stackchart(fruit);
+        // }
+        $('input[type=hidden]').change(function () {
+            drawChart();
+            let year1 = document.querySelector('#year1').value;
+            let year2 = document.querySelector('#year2').value;
+            conceptchart(year1, year2)
+        })
+
+
+        function drawChart(fruit) {
+            //console.log("here");
+            let year1 = document.querySelector('#year1').value;
+            //console.log(year1);
+            let year2 = document.querySelector('#year2').value;
+            //console.log(year2);
+            let country = document.querySelector('#country').value || "";
+            stackchart(fruit, country, year1, year2);//stack
+            //bubble
+            bubblechart(fruit, year1, year2);
+
+        }
+        drawChart("香蕉");
+        conceptchart(95, 105)
+        $('.arrow1').hover(function () {
+            $('.step').html("可先透過時間滑桿，選擇感興趣的年度區間範圍。")
+        })
+        $('.arrow2').hover(function () {
+            $('.step').html("利用水果與進口國間的關聯圖，選擇想知道水果，進而顯示該水果外貿情況。")
+        })
+        $('.arrow3').hover(function () {
+            $('.step').html("在確定關注年份、水果後，即可操作泡泡圖獲取該水果在台各縣市不同年份實際的產量狀況。")
+        })
+        $('.arrow4').hover(function () {
+            $('.step').html("也可透過出口累積圖，清楚理解各國在年對台的採購狀況，以理解各國對台的影響程度。")
+        })
+    </script>
+</body>
+
+</html>
